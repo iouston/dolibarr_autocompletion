@@ -1,0 +1,54 @@
+{
+    "scope": "source.php",
+    "completions": [
+        {
+            "trigger": "source",
+            "contents": "https://www.sublimetext.com/docs/completions.html#completion-files",
+            "annotation" : "Gérer les autocompletions",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Affiche le lien source des autocompletions pour sublime text"
+        },
+        {
+            "trigger": "cc",
+            "annotation" : "Copyright",
+            "contents": "* Copyright (C) 2024 Julien Marchand <julien.marchand@iouston.com>",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute le copyright"
+        },
+        {
+            "trigger": "img_help",
+            "annotation" : "Aide infobulle",
+            "contents": "\\$img_help(1,\\$langs->trans('${1:value}');",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute la fonction <strong>$img_help()</strong> de dolibarr"
+        },
+        {
+            "trigger": "img_picto",
+            "annotation" : "picto",
+            "contents": "\\$img_picto(1,\\$langs->trans('${1:value}');",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute la fonction <strong>$img_picto()</strong> de dolibarr"
+        },
+        {
+            "trigger": "langs",
+            "annotation" : "Traduction de texte",
+            "contents": "\\$langs->trans('${1:value}');",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute la fonction <strong>$langs->trans()</strong> de dolibarr"
+        },
+        {
+            "trigger": "prr",
+            "annotation" : "joli print_r()",
+            "contents": "echo '<pre>';\n var_dump('${1:value}');\necho '</pre>';\n",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute la fonction <strong>print_r()</strong> avec préformattage"
+        },
+        {
+            "trigger": "var_",
+            "annotation" : "joli print_r()",
+            "contents": "echo '<pre>';\n var_dump('${1:value}');\necho '</pre>';\n",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute la fonction <strong>var_dump()</strong>avec préformattage"
+        },
+    ]
+}
