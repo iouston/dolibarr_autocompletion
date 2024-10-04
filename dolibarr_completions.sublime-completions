@@ -16,37 +16,72 @@
             "details" : "Ajoute le copyright"
         },
         {
+            "trigger": "form",
+            "annotation": "Ajoute un formulaire pour dolibarr",
+            "contents" : "// ${1:form description}\nprint '<form action=\"'.\\$_SERVER[\"PHP_SELF\"].'\" method=\"POST\" name=\"${2:form name}\">';\nprint '<input type=\"hidden\" name=\"token\" value=\"'.newToken().'\">';\nprint '<input type=\"hidden\" name=\"action\" value=\"addline\">';\nprint '<input type=\"hidden\" name=\"id\" value=\"${3:form value}\">';",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute un formulaire pour dolibarr"
+        },
+        {
+            "trigger": "getDolGlobalInt",
+            "annotation" : "getDolGlobalInt($key, $default = 0)",
+            "contents": "getDolGlobalInt('${1:value}')",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Retourne la valeur d'option de type int de dolibarr"
+        },
+        {
+            "trigger": "getp",
+            "annotation" : "GETPOST($paramname, $check = 'alphanohtml', $method = 0, $filter = null, $options = null, $noreplace = 0)",
+            "contents": "GETPOST('${1:value}',${2:value})",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute la fonction <strong>GETPOST()</strong> de dolibarr"
+        },
+        {
+            "trigger": "ismod",
+            "annotation" : "Module actif ?",
+            "contents": "isModEnabled('${1:value}')",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute la fonction <strong>isModEnabled()</strong> de dolibarr"
+        },
+        {
             "trigger": "img_help",
             "annotation" : "Aide infobulle",
-            "contents": "\\$img_help(1,\\$langs->trans('${1:value}');",
+            "contents": "img_help(1,\\$langs->trans('${1:value}');",
             "kind" : ["snippet", "D", "Dolibarr"],
             "details" : "Ajoute la fonction <strong>$img_help()</strong> de dolibarr"
         },
         {
             "trigger": "img_picto",
             "annotation" : "picto",
-            "contents": "\\$img_picto(1,\\$langs->trans('${1:value}');",
+            "contents": "img_picto(1,\\$langs->trans('${1:value}');",
             "kind" : ["snippet", "D", "Dolibarr"],
             "details" : "Ajoute la fonction <strong>$img_picto()</strong> de dolibarr"
         },
         {
             "trigger": "langs",
             "annotation" : "Traduction de texte",
-            "contents": "\\$langs->trans('${1:value}');",
+            "contents": "\\$langs->trans('${1:value}')",
             "kind" : ["snippet", "D", "Dolibarr"],
             "details" : "Ajoute la fonction <strong>$langs->trans()</strong> de dolibarr"
         },
         {
             "trigger": "prr",
             "annotation" : "joli print_r()",
-            "contents": "echo '<pre>';\n var_dump('${1:value}');\necho '</pre>';\n",
+            "contents": "echo '<pre>';\n print_r(${1:value});\necho '</pre>';\n",
             "kind" : ["snippet", "D", "Dolibarr"],
             "details" : "Ajoute la fonction <strong>print_r()</strong> avec préformattage"
         },
         {
+            "trigger": "event",
+            "annotation" : "Affiche un message de succès, un warning ou une erreur",
+            "contents": "setEventMessages($langs->trans(""), null, 'mesgs');",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute la fonction <strong>setEventMessages()</strong> mesgs / warnings / errors"
+        },
+        {
             "trigger": "var_",
             "annotation" : "joli print_r()",
-            "contents": "echo '<pre>';\n var_dump('${1:value}');\necho '</pre>';\n",
+            "contents": "echo '<pre>';\n var_dump(${1:value});\necho '</pre>';\n",
             "kind" : ["snippet", "D", "Dolibarr"],
             "details" : "Ajoute la fonction <strong>var_dump()</strong>avec préformattage"
         },

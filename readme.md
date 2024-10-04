@@ -19,4 +19,5 @@ Dolibar autocompletion give you a lot of autocompletion in sublimetext for dolib
 - img_picto → display dolibarr img_picto()
 - langs → diplay dolibarr $langs->trans()
 - prr → display preformatted print_r()
+- event → display dolibarr setEventMessages()
 - var_ → display preformatted var_dump()
