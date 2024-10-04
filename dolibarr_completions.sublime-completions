@@ -37,6 +37,13 @@
             "details" : "Ajoute la fonction <strong>GETPOST()</strong> de dolibarr"
         },
         {
+            "trigger": "header",
+            "annotation" : "redirection header location",
+            "contents": "header('Location: '.$_SERVER['PHP_SELF'].'?id='.$object->id);",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute <strong>header('Location:...</strong>"
+        },
+        {
             "trigger": "ismod",
             "annotation" : "Module actif ?",
             "contents": "isModEnabled('${1:value}')",
@@ -74,7 +81,7 @@
         {
             "trigger": "setEvent",
             "annotation" : "Affiche un message de succès, un warning ou une erreur",
-            "contents": "setEventMessages($langs->trans('{1:value}'), null, 'mesgs');",
+            "contents": "setEventMessages(\\$langs->trans('${1:value}'), null, 'mesgs');",
             "kind" : ["snippet", "D", "Dolibarr"],
             "details" : "Ajoute la fonction <strong>setEventMessages()</strong> mesgs / warnings / errors"
         },
