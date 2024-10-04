@@ -39,7 +39,7 @@
         {
             "trigger": "header",
             "annotation" : "redirection header location",
-            "contents": "header('Location: '.$_SERVER['PHP_SELF'].'?id='.$object->id);",
+            "contents": "header('Location: '.\\$_SERVER['PHP_SELF'].'?id='.\\$object->id);",
             "kind" : ["snippet", "D", "Dolibarr"],
             "details" : "Ajoute <strong>header('Location:...</strong>"
         },
