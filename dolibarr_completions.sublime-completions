@@ -72,9 +72,9 @@
             "details" : "Ajoute la fonction <strong>print_r()</strong> avec préformattage"
         },
         {
-            "trigger": "event",
+            "trigger": "setEvent",
             "annotation" : "Affiche un message de succès, un warning ou une erreur",
-            "contents": "setEventMessages($langs->trans(""), null, 'mesgs');",
+            "contents": "setEventMessages($langs->trans('{1:value}'), null, 'mesgs');",
             "kind" : ["snippet", "D", "Dolibarr"],
             "details" : "Ajoute la fonction <strong>setEventMessages()</strong> mesgs / warnings / errors"
         },
