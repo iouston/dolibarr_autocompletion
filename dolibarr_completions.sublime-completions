@@ -55,14 +55,28 @@
             "annotation" : "Aide infobulle",
             "contents": "img_help(1,\\$langs->trans('${1:value}');",
             "kind" : ["snippet", "D", "Dolibarr"],
-            "details" : "Ajoute la fonction <strong>$img_help()</strong> de dolibarr"
+            "details" : "Ajoute la fonction <strong>img_help()</strong> de dolibarr"
         },
         {
             "trigger": "img_picto",
             "annotation" : "picto",
             "contents": "img_picto(1,\\$langs->trans('${1:value}');",
             "kind" : ["snippet", "D", "Dolibarr"],
-            "details" : "Ajoute la fonction <strong>$img_picto()</strong> de dolibarr"
+            "details" : "Ajoute la fonction <strong>img_picto()</strong> de dolibarr"
+        },
+        {
+            "trigger": "img_view",
+            "annotation" : "picto oeil",
+            "contents": "img_view(1,\\$langs->trans('${1:value}');",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute la fonction <strong>img_view()</strong> de dolibarr"
+        },
+        {
+            "trigger": "ini_",
+            "annotation" : "ini_set()",
+            "contents": "ini_set('display_errors', 1);\nini_set('display_startup_errors', 1);\nerror_reporting(E_ALL);",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Force le debug"
         },
         {
             "trigger": "langs",

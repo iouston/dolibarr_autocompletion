@@ -17,6 +17,8 @@ Dolibar autocompletion give you a lot of autocompletion in sublimetext for dolib
 - cc → display a copyright line
 - img_help → display dolibarr img_help()
 - img_picto → display dolibarr img_picto()
+- img_view → display dolibarr img_view()
+- ini_ → add ini_set() for display_error
 - langs → diplay dolibarr $langs->trans()
 - prr → display preformatted print_r()
 - event → display dolibarr setEventMessages()
