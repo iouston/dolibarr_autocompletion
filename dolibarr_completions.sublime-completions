@@ -73,7 +73,7 @@
         },
         {
             "trigger": "ini_",
-            "annotation" : "ini_set()",
+            "annotation" : "Force le debug avec ini_set()",
             "contents": "ini_set('display_errors', 1);\nini_set('display_startup_errors', 1);\nerror_reporting(E_ALL);",
             "kind" : ["snippet", "D", "Dolibarr"],
             "details" : "Force le debug"
