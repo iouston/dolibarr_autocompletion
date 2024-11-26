@@ -16,9 +16,16 @@
             "details" : "Ajoute le copyright"
         },
         {
+            "trigger": "class",
+            "annotation" : "Class",
+            "contents": "class=\"butAction\"",
+            "kind" : ["snippet", "D", "Dolibarr"],
+            "details" : "Ajoute la classe des boutons d'action"
+        },
+        {
             "trigger": "form",
             "annotation": "Ajoute un formulaire pour dolibarr",
-            "contents" : "// ${1:form description}\nprint '<form action=\"'.\\$_SERVER[\"PHP_SELF\"].'\" method=\"POST\" name=\"${2:form name}\">';\nprint '<input type=\"hidden\" name=\"token\" value=\"'.newToken().'\">';\nprint '<input type=\"hidden\" name=\"action\" value=\"addline\">';\nprint '<input type=\"hidden\" name=\"id\" value=\"${3:form value}\">';",
+            "contents" : "// ${1:form description}\nprint '<form action=\"'.\\$_SERVER[\"PHP_SELF\"].'\" method=\"POST\" name=\"${2:form name}\">';\nprint '<input type=\"hidden\" name=\"token\" value=\"'.newToken().'\">';\nprint '<input type=\"hidden\" name=\"action\" value=\"addline\">';\nprint '<input type=\"hidden\" name=\"id\" value=\"${3:form value}\">';\nprint '<input type=\"submit\" name=\"valid\" value=\"${3:form value}\">';\nprint '</form>';",
             "kind" : ["snippet", "D", "Dolibarr"],
             "details" : "Ajoute un formulaire pour dolibarr"
         },
@@ -101,7 +108,7 @@
         },
         {
             "trigger": "var_",
-            "annotation" : "joli print_r()",
+            "annotation" : "joli var_dump()",
             "contents": "echo '<pre>';\n var_dump(${1:value});\necho '</pre>';\n",
             "kind" : ["snippet", "D", "Dolibarr"],
             "details" : "Ajoute la fonction <strong>var_dump()</strong>avec préformattage"
